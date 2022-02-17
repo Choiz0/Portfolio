@@ -1,9 +1,128 @@
 /* Global setting */
-:root{
+:root {
   /* color */
-  --color-purple:#845EC2;
-  --color-pink:#D65DB1;
-  --color-oragne:#FF9671;
-  --color-darkyellow:#FFC75F;
-  --color-lightwyellow:#F9F871;
+  --color-white: #ffffff;
+  --color-purple: #845ec2;
+  --color-pink: #d65db1;
+  --color-oragne: #ff9671;
+  --color-darkyellow: #ffc75f;
+  --color-black: #4d4d4d;
+  --color-lightwyellow: #f9f871;
+
+  /* fontsize */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* font weight */
+  --font-weight-bold: 700;
+  --font-weight-medium: 600;
+  --font-weight-light: 400;
+
+  /* size */
+  --size-border-radius: 4px;
 }
+
+/* universal tags */
+* {
+  box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    
+}
+a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+ul{
+   
+}
+li{
+    list-style-type: none;;
+}
+/* typography */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-black);
+  margin: 16px 0;
+}
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+h3 {
+  font-size: var(--font-regular);
+  color: var(--color-black);
+
+  margin: 8px 0;
+}
+p {
+  font-size: var(--font-regular);
+  color: var(--color-black);
+  font-weight: var(--font-weight-light);
+  margin: 4px 0;
+}
+
+/* navbar */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 16px;
+    background-color: var(--color-pink);
+    color:var(--color-white);
+    
+    
+}
+.navbar__logo{
+   font-size: var(--font-regular);
+   font-weight: var(--font-weight-medium);
+   color:var(--color-white);
+}
+.navbar__logo a{
+    margin-left: 5px;
+}
+.navar__menu{
+    display: flex;
+    
+}
+
+.navbar__menu__item{
+    padding: 8px 12px;
+    margin:0px 5px;
+    position: relative;
+    color: var(--color-white);
+    cursor: pointer;
+
+}
+.navbar__menu__item.active{
+    border: 1px solid white;
+    border-radius: var(--size-border-radius);
+}
+
+.navbar__menu__item a:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar__menu__item a:hover:before{
+    visibility: visible;
+    width: 100%;
+}
+
+   
