@@ -22,6 +22,7 @@
 
       
     <!-- navbar -->
+    <section id="bgwrap">
     <nav id="navbar">
       <div class="navbar__logo">
 
@@ -36,37 +37,53 @@
         <li class="navbar__menu__item"><a href="" class="navbar__menu__link">Contact</a></li>
       </ul>
     </nav>
-
+  
     <!-- home -->
+ 
     <section id="home">
-    <img src="imgs/avatar.jpg" alt="" class="home_img" />
+        <div class="home__namebox">
+    <img src="imgs/avatar.jpg" alt="" class="home_img" /></div>
+    <div class="home__desbox">
     <h1 class="home__name">
       Hello,<br />
       I'm Dearm Coder
     </h1>
+
+
     <h2 class="home__intro">Front-End Developer</h2>
     <button class="home__contact">Contact Me</button>
-    </section>
-   
+</div>
+<!-- bottom desgin line -->
+<div class="custom-shape-divider-bottom-1645147194">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+    </svg>
+  
+</div>
+</div>
+
+</section>
+
+</section>
+
     <!-- about -->
     <section id="about">
-      <h1>About Me</h1>
+        <div class="about__introbox">
+      <h1>About Me</h1>  
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
         laboriosam soluta eveniet suscipit! Expedita quis, provident nostrum
         sint placeat amet cum facilis, consequatur ea vero quidem numquam,
         reprehenderit qui odit!
       </p>
+      </div>
       <div class="about__majors">
         <div class="major">
           <div class="major_icon"><i class="fa-brands fa-html5"></i></div>
           <div class="major_title">Front-End</div>
           <div class="major_description">HTML CSS JAVASCRIPT</div>
         </div>
-        <div class="major">
-          <div class="major_icon">
-            <i class="fa-solid fa-mobile-screen"></i>
-          </div>
+      
           <div class="major">
             <div class="major_icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
             <div class="major_title">Backend</div>
@@ -78,82 +95,101 @@
           <div class="major_description">HTML CSS JAVASCRIPT</div>
         </div>
       </div>
-      <div class="about__school">
-          <div class="shool">
-          <div class="school__icon"><img src=" alt=""></div>
-          <p>Quensland University of Technology</p>
-          <p>2015-2017</p>
+      <div class="school">
+          <div class="school__des">
+              <img src="/imgs/qut.png" alt="" class="school__img">
           </div>
+          <div class="school_date">
+              <p>QUT  / Computer Science<br>2015-2018</p></div>
+      </div>
 
-          <div class="shool">
-            <div class="school__icon"><img src=""></div>
-            <p>Tafe</p>
-            <p>2015-2017</p>
-            </div>
+      <div class="school">
+        <div class="school__des">
+            <img src="/imgs/qut.png" alt="" class="school__img">
+        </div>
+        <div class="school_date">
+            <p>QUT<br>2015-2018</p></div>
     </div>
+    <div class="school">
+        <div class="school__des">
+            <img src="/imgs/qut.png" alt="" class="school__img">
+        </div>
+        <div class="school_date">
+            <p>QUT<br>2015-2018</p></div>
+    </div>
+    
+      </div>
+     
     </section>
-
+    
     <!-- skills -->
     <section id="skills">
+        <div class="custom-shape-divider-top-1645177273">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
         <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, animi ratione. Tenetur perspiciatis ducimus necessitatibus sed fugit, ullam amet voluptatem optio repellat beatae aliquid atque, iusto ex quo dolorum labore.</p>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, animi ratione. Tenetur perspiciatis ducimus necessitatibus sed fugit, ullam amet voluptatem optio repellat beatae aliquid atque, iusto ex quo dolorum labore.</p> -->
         <div class="skills__skillset">   
         <div class="skillset__left">
-            <h3 class="skillset__left__title">SKills</h3>
+            <h3 class="skillset__left__title">Skills</h3>
             <div class="skillset__left__box">
                 <div class="skillbox">
                     <div class="skillbox__info">
                     <span class="skillname">HTML</span>
-                    <span class="skillpoint">90</span>
+                    <span class="skillpoint">90%</span>
+                    
                     </div>
                     <div class="skillbox__graph">
-                        <span class="backcolor"></span>
-                        <span class="pointcolor"></span>
+            
+                        <div class="skillvalue" style="width: 90%;"></div>
+                       
                     </div>
                 </div>
 
                 <div class="skillbox">
-                    <div class="skillbox__info">
+                    <div class="skillbox__info" >
                     <span class="skillname">CSS</span>
-                    <span class="skillpoint">80</span>
+                    <span class="skillpoint">80%</span>
                     </div>
                     <div class="skillbox__graph">
-                        <span class="backcolor"></span>
-                        <span class="pointcolor"></span>
+                        <div class="skillvalue" style="width: 80%;"></div>
+
                     </div>
                 </div>
 
                 <div class="skillbox">
                     <div class="skillbox__info">
                     <span class="skillname">Javascript</span>
-                    <span class="skillpoint">70</span>
+                    <span class="skillpoint">70%</span>
                     </div>
                     <div class="skillbox__graph">
-                        <span class="backcolor"></span>
-                        <span class="pointcolor"></span>
+                        <div class="skillvalue" style="width: 70%;"></div>
+
                     </div>
                 </div>
                 
                 <div class="skillbox">
                     <div class="skillbox__info">
                     <span class="skillname">React</span>
-                    <span class="skillpoint">70</span>
+                    <span class="skillpoint">70%</span>
                     </div>
                     <div class="skillbox__graph">
-                        <span class="backcolor"></span>
-                        <span class="pointcolor"></span>
+                        <div class="skillvalue" style="width: 70%;"></div>
+
                     </div>
                 </div>
 
                 <div class="skillbox">
                     <div class="skillbox__info">
                     <span class="skillname">NodeJS</span>
-                    <span class="skillpoint">60</span>
+                    <span class="skillpoint">60%</span>
                     </div>
                     <div class="skillbox__graph">
-                        <span class="backcolor"></span>
-                        <span class="pointcolor"></span>
+                        <div class="skillvalue" style="width: 60%;"></div>
+
                     </div>
                 </div>
 
@@ -178,7 +214,7 @@
         </div>
         </div>
     </div>
-
+   
 
     </section>
     <!-- my work -->
