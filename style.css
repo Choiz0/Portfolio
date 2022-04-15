@@ -795,10 +795,11 @@ p {
   .arrow-up {
     width: 40px;
     height: 40px;
-    font-size: 30px;
+    font-size: 40px;
     line-height: 40px;
     right: 16px;
     bottom: 16px;
     padding:0px;
+    text-align: center;
   }
 }
