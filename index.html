@@ -25,57 +25,62 @@
 
       
     <!-- navbar -->
-    <section id="bgwrap">
+  
     <nav id="navbar">
       <div class="navbar__logo">
 
         <i class="fa-solid fa-infinity" ></i>
         <a href="#" class="navbar_title">Sarah</a>
       </div>
-      <ul class="navar__menu">
-        <li class="navbar__menu__item active"><a href="" class="navbar__menu__link">Home</a></li>
-        <li class="navbar__menu__item"><a href="" class="navbar__menu__link">About</a></li>
-        <li class="navbar__menu__item"><a href="" class="navbar__menu__link">Skills</a></li>
-        <li class="navbar__menu__item"><a href="" class="navbar__menu__link">My work</a></li>
-        <li class="navbar__menu__item"><a href="" class="navbar__menu__link">Contact</a></li>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#skills">Skills</li>
+        <li class="navbar__menu__item" data-link="#work">My work</li>
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
       </ul>
- 
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </nav>
   
     <!-- home -->
  
     <section id="home">
-        <div class="home__imgbox">
-    <img src="imgs/img3.jpg" alt="" class="home_img appear" /><span></span></div>
-    <div class="home__introbox">
-        <div class="css-typing">
-            <h1>
-              Hello,
-            </h1>
-            <h1>
-              I'm Sarah Choi
-            </h1>
-            <h1>
-                Front-End Developer
-            </h1>
-          </div>
-    
        
-        <button class="home__contact">Contact Me</button>
-    </div>
+        <div class="home__imgbox">
+            <img src="imgs/img4.jpg" alt="" class="home_img appear" />
+        </div>
+        <div class="home__introbox">
+            <div class="css-typing">
+                <h1>
+                Hello,
+                </h1>
+                <h1>
+                I'm Sarah Choi
+                </h1>
+                <h1>
+                     Front-End Developer
+                </h1>
+            </div>
+    
+       <div class="contactbox"><button class="home__contact" data-link="#contact" >CONTACT ME</button></div>
+        
+        
+        </div>
 
-
+    
 
   
-</div>
-</div>
 
-</section>
 
-</section>
+    </section>
+
+
 
     <!-- about -->
-    <section id="about">
+    <section id="about" class="section section__container">
         <div class="about__introbox">
       <h1>About Me</h1>  
       <p>
@@ -84,20 +89,20 @@
       </div>
       <div class="about__majors">
         <div class="major">
-          <div class="major_icon"><i class="fa-brands fa-html5"></i></div>
-          <div class="major_title">Front-End</div>
-          <div class="major_description">HTML CSS JAVASCRIPT</div>
+          <div class="major__icon"><i class="fa-brands fa-html5"></i></div>
+          <div class="major__title"><h2>Front-End</h2></div>
+          <div class="major__description">HTML CSS JAVASCRIPT</div>
         </div>
       
           <div class="major">
-            <div class="major_icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-            <div class="major_title">mobile</div>
-            <div class="major_description">HTML CSS JAVASCRIPT</div>
+            <div class="major__icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <div class="major__title"><h2>Mobile</h2></div>
+            <div class="major__description">HTML CSS JAVASCRIPT</div>
           </div>
         <div class="major">
-          <div class="major_icon"><i class="fa-solid fa-database"></i></div>
-          <div class="major_title">backend</div>
-          <div class="major_description">HTML CSS JAVASCRIPT</div>
+          <div class="major__icon"><i class="fa-solid fa-database"></i></div>
+          <div class="major__title"><h2>Backend</h2></div>
+          <div class="major__description">HTML CSS JAVASCRIPT</div>
         </div>
       </div>
       
@@ -133,175 +138,215 @@
      
     </section>
     
-    <!-- skills -->
-    <section id="skills">
-        <!-- <div class="custom-shape-divider-top-1645177273">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-        </div> -->
-        <h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
-        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, animi ratione. Tenetur perspiciatis ducimus necessitatibus sed fugit, ullam amet voluptatem optio repellat beatae aliquid atque, iusto ex quo dolorum labore.</p> -->
-        <div class="skills__skillset">   
+   <!-- Skills -->
+   <section id="skills" class="section">
+    <div class="section__container">
+      <h1>Skills</h1>
+      <h2>Skills & Attributes</h2>
+      <p>
+        Experience with all phases of the software life-cycle. Passion for
+        learning new technologies. Capable of working within a team environment
+        and independently. Ability to plan and time schedule, work under strict
+        time pressure and adapt quickly when needed.
+      </p>
+      <div class="skillset">
         <div class="skillset__left">
-            <h3 class="skillset__left__title">Skills</h3>
-            <div class="skillset__left__box">
-                <div class="skillbox">
-                    <div class="skillbox__info">
-                    <span class="skillname">HTML</span>
-                    <span class="skillpoint">90%</span>
-                    
-                    </div>
-                    <div class="skillbox__graph">
-            
-                        <div class="skillvalue" style="width: 90%;"></div>
-                       
-                    </div>
-                </div>
-
-                <div class="skillbox">
-                    <div class="skillbox__info" >
-                    <span class="skillname">CSS</span>
-                    <span class="skillpoint">80%</span>
-                    </div>
-                    <div class="skillbox__graph">
-                        <div class="skillvalue" style="width: 80%;"></div>
-
-                    </div>
-                </div>
-
-                <div class="skillbox">
-                    <div class="skillbox__info">
-                    <span class="skillname">Javascript</span>
-                    <span class="skillpoint">70%</span>
-                    </div>
-                    <div class="skillbox__graph">
-                        <div class="skillvalue" style="width: 70%;"></div>
-
-                    </div>
-                </div>
-                
-                <div class="skillbox">
-                    <div class="skillbox__info">
-                    <span class="skillname">React</span>
-                    <span class="skillpoint">70%</span>
-                    </div>
-                    <div class="skillbox__graph">
-                        <div class="skillvalue" style="width: 70%;"></div>
-
-                    </div>
-                </div>
-
-                <div class="skillbox">
-                    <div class="skillbox__info">
-                    <span class="skillname">NodeJS</span>
-                    <span class="skillpoint">60%</span>
-                    </div>
-                    <div class="skillbox__graph">
-                        <div class="skillvalue" style="width: 60%;"></div>
-
-                    </div>
-                </div>
-
+          <h3 class="skillset__title">Skills</h3>
+          <div class="skill">
+            <div class="skill__description">
+              <span>HTML</span>
+              <span>70%</span>
             </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width:70%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>CSS</span>
+              <span>70%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 70%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>JavaScript</span>
+              <span>70%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 70%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>TypeScript</span>
+              <span>30%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 30%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>React</span>
+              <span>30%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 30%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>NodeJS</span>
+              <span>20%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 20%;"></div>
+            </div>
+          </div>
         </div>
         <div class="skillset__right">
-            <div class="skillset-up">
-                <h3>Tools</h3>
-                <ul class="skills__toollist">
-                    <li class="toollist">VSCODE</li>
-                    <li class="toollist">Photoshop</li>
-                    <li class="toollist">Wordpress</li>
-                </ul>
-            </div>
-            <div class="skillset-down">
-                <h3>Other Skills</h3>
-                <ul class="skills__ectlist">
-                    <li class="ectlist">Git</li>
-                    <li class="ectlist">AWS</li>
-                </ul>
-            </div>
-        </div>
+          <div class="tools">
+            <h3 class="skillset__title">Tools</h3>
+            <ul class="tools__list">
+              <li><span>Visual Studio Code</span></li>
+              <li><span>IntelliJ</span></li>
+              
+            </ul>
+          </div>
+          <div class="etc">
+            <h3 class="skillset__title">Etc</h3>
+            <ul class="etc__list">
+              <li><span>Git</span></li>
+              
+            </ul>
+          </div>
         </div>
     </div>
-   
+  </section>
 
-    </section>
+
     <!-- my work -->
-    <section id="work">
-        <h1>My work</h1>
-        <h2>Projects</h2>
-        <div class="work__button">
-            <button class="work__btn active">All Projects
-                <span class="category_count">4</span>
-            </button>
-            
-            <button class="work__btn">Front-End
-                <span class="category_count">2</span>
-
-            </button>
-            <button class="work__btn">Back-End<span class="category_count">1</span>
-            </button>
-            
+    <section id="work" class="section">
+        <div class="section__container">
+         <h1>My work</h1>
+         <h3>Projects</h3>
+         <div class="work__categories">
+           <button class="category__btn selected" data-filter="*">
+             All <span class="category__count">8</span>
+           </button>
+           <button class="category__btn" data-filter="front-end">
+             Front-end <span class="category__count">3</span>
+           </button>
+           <button class="category__btn" data-filter="back-end">
+             Back-end <span class="category__count">3</span>
+           </button>
+           <button class="category__btn" data-filter="mobile">
+             Mobile <span class="category__count">2</span>
+           </button>
+         </div>
+         <div class="work__projects">
+           <a href="" class="project" target="blank" data-type="front-end">
+             <img
+               src="imgs/projects/project1.png"
+               alt="Youtube"
+               class="project__img"
+             />
+             <div class="project__description">
+               <h3>Youtube Site</h3>
+               <span>Clone coding with HTML, CSS</span>
+             </div>
+           </a>
+           <a
+             href=""
+             class="project"
+             data-type="front-end"
+             target="blank"
+           >
+             <img
+               class="project__img"
+               src="imgs/projects/project2.png"
+               alt="navbar"
+             />
+             <div class="project__description">
+               <h3>Responsive Navbar</h3>
+               <span>HTML, CSS with media query</span>
+             </div>
+           </a>
+           <a
+             href=""
+             class="project"
+             data-type="front-end"
+             target="blank"
+           >
+             <img class="project__img" src="imgs/projects/project1.png" alt="navbar" />
+             <div class="project__description">
+               <h3>Shopping mall game</h3>
+               <span>HTML, CSS, JavaScript, Json</span>
+             </div>
+           </a>
+           <a href="" class="project" data-type="back-end">
+             <img class="project__img" src="imgs/projects/project2.png" alt="" />
+             <div class="project__description">
+               <h3>Project</h3>
+               <span>Explanation</span>
+             </div>
+           </a>
+           <a href="" class="project" data-type="back-end">
+             <img class="project__img" src="imgs/projects/project3.png" alt="" />
+             <div class="project__description">
+               <h3>Project</h3>
+               <span>Explanation</span>
+             </div>
+           </a>
+           <a href="" class="project" data-type="mobile">
+             <img class="project__img" src="imgs/projects/project4.png" alt="" />
+             <div class="project__description">
+               <h3>Project</h3>
+               <span>Explanation</span>
+             </div>
+           </a>
+           <a href="" class="project" data-type="mobile">
+             <img class="project__img" src="imgs/projects/project5.png" alt="" />
+             <div class="project__description">
+               <h3>Project</h3>
+               <span>Explanation</span>
+             </div>
+           </a>
+           <a href="" class="project" data-type="mobile">
+             <img class="project__img" src="imgs/projects/project6.png" alt="" />
+             <div class="project__description">
+               <h3>Project</h3>
+               <span>Explanation</span>
+             </div>
+           </a>
+         </div>
         </div>
-        <div class="work__projects">
-            <div class="projects">
-                <a href="" class="projcets__link">
-                    
-                    <img src="https://dummyimage.com/400x400/f8c3b3/fff" alt="project1" class="imghover">
-                    
-                </a>
-                    
-                </a>
-                <div class="projects__desc">
-                    <h3>Portfolio website</h3>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS3</li>
-                        <li>Responsive</li>
-                        
-                    </ul>
-                    <button>link</button>
-                </div>
-                
-                
-            </div>
-
-            <div class="projects">
-                <a href="" class="projcets__link">
-                    <img src="https://dummyimage.com/400x400/f8c3b3/fff" alt="project1" class="imghover">
-                    
-                </a>
-                
-                <div class="projects__desc">
-                    <h3>Clone coding</h3>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS3</li>
-                        <li>Responsive</li>
-                    </ul>
-                </div>
-                
-            </div>
-            
-
-
-            
-        </div>
-    </section>
+       </section>
 
     <!-- contact -->
-    <section id="contact">
-        <div class="contact__box">
-            <h1>Let's talk</h1>
-            <h2>sarahchoi_webdeveloper@outlook.com</h2>
-            <div class="contact__imgbox">
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-linkedin"></i>
-            </div>
-            <h3>2022 Sarah Choi - All rights reserved</h3>
-        </div>
+    
+    <section id="contact" class="section">
+      <h1 class="contact__title">Let's talk</h1>
+      <h2 class="contact__email">sarahchoi_webdeveloper@outlook.com</h2>
+      <div class="contact__links">
+        <a href="https://github.com/dream-ellie" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i class="fa fa-linkedin-square"></i>
+        </a>
+      </div>
+      <p class="contact__rights">
+        2022 - All rights reserved
+      </p>
     </section>
+    <!-- arrow-up button -->
+    <button class="arrow-up">
+
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
   </body>
 </html>
