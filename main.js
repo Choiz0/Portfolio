@@ -77,7 +77,7 @@ work__category.addEventListener("click", (e) => {
   target.classList.add("selected");
   setTimeout(() => {
     projects.forEach((project) => {
-      console.log(project.dataset.type);
+      
       if (filter === "*" || filter === project.dataset.type) {
         project.classList.remove("invisible");
       } else {
@@ -87,6 +87,7 @@ work__category.addEventListener("click", (e) => {
     work__projects.classList.remove("anim-out");
   }, 300);
 });
+
 
 // function for scroll to target
 function scrollIntoView(selector) {
